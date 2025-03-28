@@ -27,7 +27,7 @@ uses
   ,intf.ZUGFeRDXmlUtils
   ;
 
-Wird nicht benutzt, sehe momentan keinen Sinn hinter dieser Helperklasse
+//Wird nicht benutzt, sehe momentan keinen Sinn hinter dieser Helperklasse
 
 type
   /// <summary>

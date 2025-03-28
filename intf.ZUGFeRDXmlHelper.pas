@@ -125,6 +125,8 @@ begin
   cac:= ReturnNS(_XML.DocumentElement.FindNamespaceURI('cac'), 'urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2');
   cbc:= ReturnNS(_XML.DocumentElement.FindNamespaceURI('cbc'), 'urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2');
 
+  // TODO: TH 'xsi:schemaLocation' hinzufügen, damit alle Dateien identifiziert werden können
+
   sNsLine := Format('xmlns:qdt="%s" xmlns:ram="%s" xmlns:rsm="%s" xmlns:udt="%s" xmlns:cac="%s" xmlns:cbc="%s"', [qdt, ram, rsm, udt, cac, cbc]);
   Result := CoDOMDocument60.Create;
   Result.preserveWhiteSpace := True; // preserve CRLF on multiline strings also
